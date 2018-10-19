@@ -1,6 +1,6 @@
 # Define settings in openQA
 
-## Menu > Medium Types
+### Menu > Medium Types
 ```
 Distri:  caasp
 Version: 3.0
@@ -11,7 +11,7 @@ Settings:
   DESKTOP=textmode
 ```
 
-## Menu > Machines
+### Menu > Machines
 ```
 Name:    caasp_x86_64
 Backend: qemu
@@ -22,7 +22,7 @@ Settings:
   WORKER_CLASS=caasp_x86_64
 ```
 
-## Menu > Test suites
+### Menu > Test suites
 ```yaml
 # CaaSP-controller
 +HDD_1=sle-12-SP3-Server-DVD-x86_64-gnome-CaaSP.qcow2
@@ -79,14 +79,14 @@ SYSTEM_ROLE=worker
 WORKER_CLASS=tap
 ```
 
-## Job Groups: Pair media & machine & test suites
+### Job Groups: Pair media & machine & test suites
 Now you need to associate which test should be run on which image
 
 # Run openQA jobs
 
 We already tried clone_job.pl
 
-## !!! Download GM image and support server
+### !!! Download GM image and support server
 You need to have images that you want to test :)
 ```bash
 cd /var/lib/openqa/share/factory/iso/
@@ -96,7 +96,7 @@ cd /var/lib/openqa/share/factory/hdd/
 wget https://openqa.suse.de/tests/1785307/asset/hdd/sle-12-SP3-Server-DVD-x86_64-gnome-CaaSP.qcow2
 ```
 
-## Schedule all tests associated with image
+### Schedule all tests associated with image
 Push local images to openQA scheduler. All settings have to be defined by you.
 ```bash
 /usr/share/openqa/script/client isos post ISO=SUSE-CaaS-Platform-3.0-DVD-x86_64-Build0101-Media1.iso \
