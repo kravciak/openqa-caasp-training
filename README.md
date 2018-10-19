@@ -1,15 +1,18 @@
 # CaaSP in openQA for CAP/CaaSP Team Workshop
 
+Documentation: http://open.qa/
+
 ## What we prepared already
  - install openQA workers
  - install openQA webUI
  - setup workers for multi-machine jobs and connect with webUI
 
-## openQA & schedule machine jobs
+## openQA & schedule jobs (MicroOS)
  - [Connect to webUI and run single machine job](connect.md)
 
-## openQA & multi machine jobs (CaaSP)
+## openQA & cluster jobs (CaaSP)
+ - [Cluster job scheme](openqa_scheme.md)
  - [Setup openQA & run CaaSP](settings.md)
- 
-## More info
-- [Cluster job scheme](openqa_scheme.md)
+
+## Notes
+ - https://etherpad.nue.suse.com/p/openqa-caasp-training
