@@ -12,7 +12,7 @@ BETA=0
 DESKTOP=textmode
 ```
 
-### Menu > Machines
+### Menu > Machines (change WORKER_CLASS)
 ```
 Name:    caasp_x86_64
 Backend: qemu
