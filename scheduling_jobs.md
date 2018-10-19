@@ -2,7 +2,7 @@
 
 We already tried clone_job.pl
 
-## Download GM image and support server
+## !!! Download GM image and support server
 You need to have images that you want to test :)
 ```bash
 cd /var/lib/openqa/share/factory/iso/
