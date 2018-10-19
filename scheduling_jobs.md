@@ -1,6 +1,7 @@
 # Schedule jobs
 
-# !!! IMPORTANT!!! - Download GM image and support server
+# !!! IMPORTANT!!!
+## Download GM image and support server
 You need to have images that you want to test :)
 ```bash
 cd /var/lib/openqa/share/factory/iso/
