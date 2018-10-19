@@ -18,7 +18,7 @@ openqa-webui-3:
   ssh root@uv300x.arch.suse.de -p 2203
 
 openqa-webui-4:
-  192.168.100.???
+  192.168.100.178
   http://uv300x.arch.suse.de:84/
   ssh root@uv300x.arch.suse.de -p 2204
 ```
