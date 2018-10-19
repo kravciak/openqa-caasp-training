@@ -1,6 +1,7 @@
-# Schedule jobs
+# Run jobs
 
-# !!! IMPORTANT!!!
+We already tried clone_job.pl
+
 ## Download GM image and support server
 You need to have images that you want to test :)
 ```bash
@@ -9,14 +10,6 @@ wget https://openqa.suse.de/tests/1785307/asset/iso/SUSE-CaaS-Platform-3.0-DVD-x
 
 cd /var/lib/openqa/share/factory/hdd/
 wget https://openqa.suse.de/tests/1785307/asset/hdd/sle-12-SP3-Server-DVD-x86_64-gnome-CaaSP.qcow2
-```
-
-## Clone job
-Good for single jobs, magic for multimachine jobs, impossible for clusters.
-It downloads image and schedules it. Takes all settings from remote job.
-```bash
-# https://openqa.suse.de/tests/2190959 (JeOS)
-sudo /usr/share/openqa/script/clone_job.pl --from https://openqa.suse.de --host localhost 2190959
 ```
 
 ## Schedule all tests associated with image
