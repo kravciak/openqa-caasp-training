@@ -6,8 +6,7 @@
  - setup workers for multi-machine jobs and connect with webUI
 
 ## Now we will
- - Connect to webUI (ssh/http) - **TOMAS ETHERPAD?**
- - Schedule simple jobs - [Connect & Run](connect.md)
+ - [Connect to webUI and run single machine job](connect.md)
  
 === CaaSP ===
  - Setup openQA to run CaaSP - [openQA settings](scheduling_jobs.md) - [job scheme](openqa_scheme.md)
