@@ -85,10 +85,10 @@ Now you need to associate which test should be run on which image
 You need to have images that you want to test :)
 ```bash
 cd /var/lib/openqa/share/factory/iso/
-wget https://openqa.suse.de/tests/1785307/asset/iso/SUSE-CaaS-Platform-3.0-DVD-x86_64-Build0101-Media1.iso
+wget http://openqa.suse.de/tests/1785307/asset/iso/SUSE-CaaS-Platform-3.0-DVD-x86_64-Build0101-Media1.iso
 
 cd /var/lib/openqa/share/factory/hdd/
-wget https://openqa.suse.de/tests/1785307/asset/hdd/sle-12-SP3-Server-DVD-x86_64-gnome-CaaSP.qcow2
+wget http://openqa.suse.de/tests/1785307/asset/hdd/sle-12-SP3-Server-DVD-x86_64-gnome-CaaSP.qcow2
 ```
 
 ### Schedule all tests associated with image
