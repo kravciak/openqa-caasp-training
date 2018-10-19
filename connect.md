@@ -16,6 +16,11 @@ openqa-webui-3:
   192.168.100.228
   http://uv300x.arch.suse.de:83/
   ssh root@uv300x.arch.suse.de -p 2203
+
+openqa-webui-4:
+  192.168.100.???
+  http://uv300x.arch.suse.de:84/
+  ssh root@uv300x.arch.suse.de -p 2204
 ```
 
 # Schedule single machine job with clone_job.pl
