@@ -84,8 +84,6 @@ Now you need to associate which test should be run on which image
 
 # Run openQA jobs
 
-We already tried clone_job.pl
-
 ### !!! Download GM image and support server
 You need to have images that you want to test :)
 ```bash
