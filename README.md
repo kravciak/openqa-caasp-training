@@ -9,4 +9,7 @@
  - [Connect to webUI and run single machine job](connect.md)
 
 ## openQA & multi machine jobs (CaaSP)
- - Setup openQA to run CaaSP - [openQA settings](settings.md) - [job scheme](openqa_scheme.md)
+ - [Setup openQA & run CaaSP](settings.md)
+ 
+## More info
+- [Cluster job scheme](openqa_scheme.md)
