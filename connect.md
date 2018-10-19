@@ -1,5 +1,5 @@
 # Connect to openQA
-credentials: root:susetesting
+ssh credentials: root:susetesting
 
 ```bash
 openqa-webui-1:
