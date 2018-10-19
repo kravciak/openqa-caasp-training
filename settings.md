@@ -21,7 +21,7 @@ Settings:
 HDDSIZEGB=40
 QEMUCPU=host
 QEMURAM=4096
-WORKER_CLASS=caasp_x86_64_$(1-3)
+WORKER_CLASS=caasp_x86_64_[1-3]
 ```
 
 ### Menu > Test suites
