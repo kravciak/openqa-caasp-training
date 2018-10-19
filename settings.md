@@ -6,20 +6,22 @@ Distri:  caasp
 Version: 3.0
 Flavor:  DVD
 Arch:    x86_64
+
 Settings:
-  BETA=0
-  DESKTOP=textmode
+BETA=0
+DESKTOP=textmode
 ```
 
 ### Menu > Machines
 ```
 Name:    caasp_x86_64
 Backend: qemu
+
 Settings:
-  HDDSIZEGB=40
-  QEMUCPU=host
-  QEMURAM=4096
-  WORKER_CLASS=caasp_x86_64
+HDDSIZEGB=40
+QEMUCPU=host
+QEMURAM=4096
+WORKER_CLASS=caasp_x86_64_$(1-3)
 ```
 
 ### Menu > Test suites
@@ -34,7 +36,6 @@ NOAUTOLOGIN=1
 STACK_ROLE=controller
 SUPPORT_SERVER=1
 SUPPORT_SERVER_ROLES=dhcp,dns,ntp
-WORKER_CLASS=tap
 ```
 
 ```yaml
@@ -45,7 +46,6 @@ PARALLEL_WITH=CaaSP-controller
 QEMUCPUS=2
 STACK_ROLE=admin
 SYSTEM_ROLE=admin
-WORKER_CLASS=tap
 ```
 
 ```yaml
@@ -55,7 +55,6 @@ NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
-WORKER_CLASS=tap
 ```
 
 ```yaml
@@ -65,7 +64,6 @@ NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
-WORKER_CLASS=tap
 ```
 
 ```yaml
@@ -76,7 +74,6 @@ NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
-WORKER_CLASS=tap
 ```
 
 ### Job Groups: Pair media & machine & test suites
