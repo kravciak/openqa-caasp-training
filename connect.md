@@ -1,6 +1,11 @@
 # Connect to openQA
- - ssh root@uv300x.arch.suse.de:$PORT
- - http://uv300x.arch.suse.de:$PORT
+```bash
+ SSH PORTS : 2201 - 2203
+ HTTP PORTS:   81 - 83
+
+ ssh root@uv300x.arch.suse.de -p $SSH_PORT
+ http://uv300x.arch.suse.de:$HTTP_PORT
+```
 
 # Schedule single machine job with clone_job.pl
  - Good for single jobs
