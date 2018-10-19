@@ -8,7 +8,7 @@ Deployment test needs at least 4 machines that communicate using tap devices.
 
 Jobs must be run in certain order, that is provided by mutexes and barriers. Their initialization is in main.pm file.
 
-![openqa](/uploads/1a5b83f9ea4a971f7d3a748b811a6044/openqa.png)
+![openqa](/uploads/openqa.png)
 
 ### Controller
 It's heavily customized SLES-12-SP2 image acting as support server that provides DHCP, DNS, NTP support. Also contains customized firefox to display admin dashboard and bootstrap cluster.
