@@ -5,11 +5,9 @@
  - install openQA webUI
  - setup workers for multi-machine jobs and connect with webUI
 
-## Now we will
+## openQA & schedule machine jobs
  - [Connect to webUI and run single machine job](connect.md)
- 
-=== CaaSP ===
+
+## openQA & multi machine jobs (CaaSP)
  - Setup openQA to run CaaSP - [openQA settings](scheduling_jobs.md) - [job scheme](openqa_scheme.md)
- - Multi machine scheduling - [openQA scheduling](scheduling_multi.md)
- 
- - Scheduling - [openQA scheduling](scheduling_jobs.md)
+ - Multi machine scheduling - [openQA scheduling](scheduling_jobs.md)
