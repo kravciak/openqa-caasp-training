@@ -1,4 +1,4 @@
-# Run jobs
+# Run openQA jobs
 
 We already tried clone_job.pl
 
