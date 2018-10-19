@@ -8,7 +8,7 @@ Deployment test needs at least 4 machines that communicate using tap devices.
 
 Jobs must be run in certain order, that is provided by mutexes and barriers. Their initialization is in main.pm file.
 
-![openqa](/openqa.png)
+![openqa](/assets/openqa_scheme.png)
 
 
 ### Controller
