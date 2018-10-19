@@ -1,4 +1,4 @@
-# CaaSP in openQA for CAP/CaaSP Team Workshop
+# CaaSP in openQA
 
 Documentation: http://open.qa/
 
