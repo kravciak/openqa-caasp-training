@@ -36,9 +36,7 @@ NOAUTOLOGIN=1
 STACK_ROLE=controller
 SUPPORT_SERVER=1
 SUPPORT_SERVER_ROLES=dhcp,dns,ntp
-```
 
-```yaml
 # CaaSP-admin
 EXTRABOOTPARAMS=hostname=admin
 NICTYPE=tap
@@ -46,27 +44,21 @@ PARALLEL_WITH=CaaSP-controller
 QEMUCPUS=2
 STACK_ROLE=admin
 SYSTEM_ROLE=admin
-```
 
-```yaml
 # CaaSP-master-api
 EXTRABOOTPARAMS=hostname=master-API
 NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
-```
 
-```yaml
 # CaaSP-worker-mixed
 EXTRABOOTPARAMS=hostname=miXed
 NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
-```
 
-```yaml
 # CaaSP-worker-ay1
 AUTOYAST=http://admin.openqa.test/autoyast
 EXTRABOOTPARAMS=hostname=worker-ay1
@@ -86,7 +78,9 @@ NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
+```
 
+```yaml
 # CaaSP-master-rm
 EXTRABOOTPARAMS=hostname=master-RM
 NICTYPE=tap
