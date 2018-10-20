@@ -2,7 +2,7 @@
 
 ### Menu > Medium Types
 ```
-Distri:  caasp
+Distri:  caasp<X>
 Version: 3.0
 Flavor:  DVD
 Arch:    x86_64
@@ -21,7 +21,7 @@ Settings:
 HDDSIZEGB=40
 QEMUCPU=host
 QEMURAM=4096
-WORKER_CLASS=caasp_x86_64_[1-3]
+WORKER_CLASS=caasp_x86_64
 ```
 
 ### Menu > Test suites
@@ -75,6 +75,43 @@ PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
 ```
+
+**Optional Add & Remove nodes**
+
+```yaml
+# CaaSP-worker-addrm
+DELAYED=worker
+EXTRABOOTPARAMS=hostname=worker-addrm
+NICTYPE=tap
+PARALLEL_WITH=CaaSP-controller
+STACK_ROLE=worker
+SYSTEM_ROLE=worker
+
+# CaaSP-master-rm
+EXTRABOOTPARAMS=hostname=master-RM
+NICTYPE=tap
+PARALLEL_WITH=CaaSP-controller
+STACK_ROLE=worker
+SYSTEM_ROLE=worker
+
+# CaaSP-master-add
+DELAYED=master
+EXTRABOOTPARAMS=hostname=master-add
+NICTYPE=tap
+PARALLEL_WITH=CaaSP-controller
+STACK_ROLE=worker
+SYSTEM_ROLE=worker
+
+# CaaSP-master-ay
+AUTOYAST=http://admin.openqa.test/autoyast
+EXTRABOOTPARAMS=hostname=master-ay
+NICTYPE=tap
+PARALLEL_WITH=CaaSP-controller
+STACK_ROLE=worker
+SYSTEM_ROLE=worker
+```
+
+
 
 ### Job Groups: Pair media & machine & test suites
 Now you need to associate which test should be run on which image
