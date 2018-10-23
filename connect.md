@@ -8,7 +8,10 @@ http://uv300x.arch.suse.de:81/
 ssh root@uv300x.arch.suse.de -p 2201 -4
 
 # Everyone has his own tests
-cd /var/lib/openqa/share/tests/caasp<N>
+cd /var/lib/openqa/share/tests/caasp{1..10}
+
+# Images are here
+cd /var/lib/openqa/factory/
 ```
 
 # Schedule single machine job with clone_job.pl
