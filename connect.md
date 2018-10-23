@@ -16,8 +16,11 @@ ssh root@uv300x.arch.suse.de -p 2201 -4
  
 It downloads image and schedules it. Copies all settings from remote job.
 ```bash
-# https://openqa.suse.de/tests/1783034 (MicroOS)
-sudo /usr/share/openqa/script/clone_job.pl --from openqa.suse.de --host localhost 1783034
+# https://openqa.suse.de/tests/1783034 (MicroOS 3.0)
+/usr/share/openqa/script/clone_job.pl --from openqa.suse.de --host localhost 1783034
+
+# https://openqa.suse.de/tests/2200622 (MicroOS 4.0)
+/usr/share/openqa/script/clone_job.pl --from openqa.suse.de --host localhost 2200622
 ```
 
 # Tasks
