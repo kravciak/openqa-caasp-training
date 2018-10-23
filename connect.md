@@ -1,11 +1,10 @@
 # Connect to openQA
-ssh credentials: root:susetesting
 
 ```bash
 # openqa-webui:
 http://uv300x.arch.suse.de:81/
 
-# Location of tests
+# Location of tests (credentials: root:susetesting)
 ssh root@uv300x.arch.suse.de -p 2201 -4
 ```
 
