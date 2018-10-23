@@ -21,7 +21,7 @@ sudo /usr/share/openqa/script/clone_job.pl --from https://openqa.suse.de --host 
 ```
 
 # Tasks
- - fix CaaSP 4.0 = update installation workflow
+ - fix installation workflow for CaaSP 4.0 (OCI -> SLES installer)
  - add Helm test
  - add CAP deployment
  - add drbd storage to support-server (use it later as storage class)
