@@ -27,6 +27,7 @@ WORKER_CLASS=caasp_x86_64
 # MicroOS test (optional example)
 Name: MicroOS-plain
 Settings:
+EXTRA=FEATURES
 SYSTEM_ROLE=plain
 ```
 
@@ -145,6 +146,13 @@ Push local images to openQA scheduler. All settings have to be defined by you.
   DISTRI=caasp VERSION=3.0 FLAVOR=DVD ARCH=x86_64 BUILD=0101
 ```
 
+# Files
+ - lib/caasp.pm
+ - lib/caasp_controller.pm
+ 
+ # What we have
+ - CaaSP -  
+ - MicroOS - 
 
 # Tasks
  - fix installation workflow for CaaSP 4.0 (OCI -> SLES installer)
