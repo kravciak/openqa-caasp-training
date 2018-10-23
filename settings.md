@@ -158,8 +158,18 @@ Push local images to openQA scheduler. All settings have to be defined by you.
     ├── caasp/*
     ├── caasp/stack*
 ```
- 
- # What we have
+
+# Tips
+```bash
+# connect to running job
+PORT=5990+worker_id
+vncviewer uv300x.arch.suse.de:6019 -shared
+
+# keep cluster alive in case of failure
+DEBUG_SLEEP=controller
+```
+
+# What we have
  - CaaSP   - https://openqa.suse.de/tests/overview?distri=caasp&version=3.0&build=0098&groupid=134 
  - MicroOS - https://openqa.suse.de/tests/overview?distri=caasp&version=3.0&build=0101&groupid=136
 
