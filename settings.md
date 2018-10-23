@@ -1,6 +1,6 @@
 # Define settings in openQA
 
-### Menu > Medium Types
+### Menu > Medium Types  (change Distri)
 ```yaml
 Distri:  caasp<X>
 Version: 3.0
@@ -11,7 +11,7 @@ BETA=0
 DESKTOP=textmode
 ```
 
-### Menu > Machines (change WORKER_CLASS)
+### Menu > Machines
 ```yaml
 Name:    caasp_x86_64
 Backend: qemu
@@ -126,7 +126,7 @@ Now you need to associate which test should be run on which image
 
 # Run openQA jobs
 
-### !!! Download GM image and support server
+### Download GM image and support server
 First download image that you want to test. You can download from:
  - https://openqa.suse.de/group_overview/136
  - http://download.suse.de/install/SUSE-CaaSP-3-GM/
