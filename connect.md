@@ -21,10 +21,3 @@ It downloads image and schedules it. Copies all settings from remote job.
 # https://openqa.suse.de/tests/2200622 (MicroOS 4.0)
 /usr/share/openqa/script/clone_job.pl --from openqa.suse.de --host localhost 2200622
 ```
-
-# Tasks
- - fix installation workflow for CaaSP 4.0 (OCI -> SLES installer)
- - add Helm test
- - add CAP deployment
- - add drbd storage to support-server (use it later as storage class)
- - backup & restore of admin node
