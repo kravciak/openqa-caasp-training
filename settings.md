@@ -142,8 +142,9 @@ First download image that you want to test. You can download from:
 ### Schedule all tests associated with image
 Push local images to openQA scheduler. All settings have to be defined by you.
 ```bash
+# Change DISTRI and optionally BUILD variable
 /usr/share/openqa/script/client isos post ISO=SUSE-CaaS-Platform-3.0-DVD-x86_64-Build0101-Media1.iso \
-  DISTRI=caasp VERSION=3.0 FLAVOR=DVD ARCH=x86_64 BUILD=0101
+  DISTRI=caasp<N> VERSION=3.0 FLAVOR=DVD ARCH=x86_64 BUILD=0101
 ```
 
 # Files
