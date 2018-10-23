@@ -6,7 +6,6 @@ Distri:  caasp<X>
 Version: 3.0
 Flavor:  DVD
 Arch:    x86_64
-
 Settings:
 BETA=0
 DESKTOP=textmode
@@ -16,7 +15,6 @@ DESKTOP=textmode
 ```
 Name:    caasp_x86_64
 Backend: qemu
-
 Settings:
 HDDSIZEGB=40
 QEMUCPU=host
@@ -25,6 +23,13 @@ WORKER_CLASS=caasp_x86_64
 ```
 
 ### Menu > Test suites
+```yaml
+# MicroOS test (optional example)
+Name: MicroOS-plain
+Settings:
+SYSTEM_ROLE=plain
+```
+
 ```yaml
 # CaaSP-controller
 +HDD_1=sle-12-SP3-Server-DVD-x86_64-gnome-CaaSP.qcow2
