@@ -6,6 +6,9 @@ http://uv300x.arch.suse.de:81/
 
 # Location of tests (credentials: root:susetesting)
 ssh root@uv300x.arch.suse.de -p 2201 -4
+
+# Everyone has his own tests
+cd /var/lib/openqa/share/tests/caasp<N>
 ```
 
 # Schedule single machine job with clone_job.pl
