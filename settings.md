@@ -31,7 +31,8 @@ SYSTEM_ROLE=plain
 ```
 
 ```yaml
-# CaaSP-controller
+Name: CaaSP-controller
+Settings:
 +HDD_1=sle-12-SP3-Server-DVD-x86_64-gnome-CaaSP.qcow2
 BOOT_HDD_IMAGE=1
 CONTAINER_RUNTIME=docker
@@ -42,7 +43,8 @@ STACK_ROLE=controller
 SUPPORT_SERVER=1
 SUPPORT_SERVER_ROLES=dhcp,dns,ntp
 
-# CaaSP-admin
+Name: CaaSP-admin
+Settings:
 EXTRABOOTPARAMS=hostname=admin
 NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
@@ -50,21 +52,24 @@ QEMUCPUS=2
 STACK_ROLE=admin
 SYSTEM_ROLE=admin
 
-# CaaSP-master-api
+Name: CaaSP-master-api
+Settings:
 EXTRABOOTPARAMS=hostname=master-API
 NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
 
-# CaaSP-worker-mixed
+Name: CaaSP-worker-mixed
+Settings:
 EXTRABOOTPARAMS=hostname=miXed
 NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
 
-# CaaSP-worker-ay1
+Name: CaaSP-worker-ay1
+Settings:
 AUTOYAST=http://admin.openqa.test/autoyast
 EXTRABOOTPARAMS=hostname=worker-ay1
 NICTYPE=tap
@@ -76,7 +81,8 @@ SYSTEM_ROLE=worker
 **Optional Add & Remove nodes**
 
 ```yaml
-# CaaSP-worker-addrm
+Name: CaaSP-worker-addrm
+Settings:
 DELAYED=worker
 EXTRABOOTPARAMS=hostname=worker-addrm
 NICTYPE=tap
@@ -86,14 +92,16 @@ SYSTEM_ROLE=worker
 ```
 
 ```yaml
-# CaaSP-master-rm
+Name: CaaSP-master-rm
+Settings:
 EXTRABOOTPARAMS=hostname=master-RM
 NICTYPE=tap
 PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
 
-# CaaSP-master-add
+Name: CaaSP-master-add
+Settings:
 DELAYED=master
 EXTRABOOTPARAMS=hostname=master-add
 NICTYPE=tap
@@ -101,7 +109,8 @@ PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
 
-# CaaSP-master-ay
+Name: CaaSP-master-ay
+Settings:
 AUTOYAST=http://admin.openqa.test/autoyast
 EXTRABOOTPARAMS=hostname=master-ay
 NICTYPE=tap
@@ -109,7 +118,6 @@ PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
 ```
-
 
 
 ### Job Groups: Pair media & machine & test suites
