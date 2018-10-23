@@ -1,7 +1,7 @@
 # Define settings in openQA
 
 ### Menu > Medium Types
-```
+```yaml
 Distri:  caasp<X>
 Version: 3.0
 Flavor:  DVD
@@ -12,7 +12,7 @@ DESKTOP=textmode
 ```
 
 ### Menu > Machines (change WORKER_CLASS)
-```
+```yaml
 Name:    caasp_x86_64
 Backend: qemu
 Settings:
