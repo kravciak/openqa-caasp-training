@@ -2,25 +2,11 @@
 ssh credentials: root:susetesting
 
 ```bash
-# openqa-webui-1:
-192.168.100.191
+# openqa-webui:
 http://uv300x.arch.suse.de:81/
+
+# Location of tests
 ssh root@uv300x.arch.suse.de -p 2201 -4
-
-# openqa-webui-2:
-192.168.100.222
-http://uv300x.arch.suse.de:82/
-ssh root@uv300x.arch.suse.de -p 2202 -4
-
-# openqa-webui-3:
-192.168.100.228
-http://uv300x.arch.suse.de:83/
-ssh root@uv300x.arch.suse.de -p 2203 -4
-
-# openqa-webui-4:
-192.168.100.178
-http://uv300x.arch.suse.de:84/
-ssh root@uv300x.arch.suse.de -p 2204 -4
 ```
 
 # Schedule single machine job with clone_job.pl
