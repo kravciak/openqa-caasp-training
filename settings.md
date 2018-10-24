@@ -184,7 +184,8 @@ DEBUG_SLEEP=controller
 
 # Description of basic commands
 https://github.com/os-autoinst/os-autoinst/blob/master/testapi.pm
- - assert_script_run "pin
+ - assert_script_run "pwd", 120;
+ - assert_screen "velum-started", 60;
 ```
 
 # What we have
