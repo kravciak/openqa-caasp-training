@@ -1,6 +1,6 @@
 # Define settings in openQA
 
-**Replace <N> with your number (1 .. 7)**
+**Replace `<N>` with your number (1 .. 7)**
 
 ### Menu > Medium Types  (change Distri)
 This section defines ISO image. Flavor can distinguish net/live/normal types.
@@ -27,7 +27,9 @@ WORKER_CLASS=caasp_x86_64
 ```
 
 ### Menu > Test suites
-Test suite is set of variables given to the job when started. Variables are then parsed
+Test suite is set of variables given to the job when started. Variables are then parsed and processed by tests.
+
+EXTRA - run microOS feature tests like transactional-update after installation. SYSTEM_ROLE - will be selected by installer.
 ```yaml
 # MicroOS test (optional example)
 Name: MicroOS-plain
