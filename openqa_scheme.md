@@ -23,15 +23,6 @@ After administration node is installed and velum starts we can install cluster n
 
 - autoyast nodes do not have hostname from DHCP and they use default 'linux' hostname (bsc#1031623)
 - node installed with hostname=master is later selected as master node
-- node installed with hostname=node1 is late used for accessing the cluster in firefox
-
-## HW Requirements
-On medium (default for all nodes):
- - QEMURAM=4096
- - HDDSIZEGB=40
-
-On admin test (applied only for admin):
- - QEMURAM=8192
- - QEMUCPUS=4
+- node installed with hostname=mixed is late used for accessing the cluster in firefox
 
 If you use more CPUs/RAM/DISK please make sure that you have underlying HW that can handle it!
