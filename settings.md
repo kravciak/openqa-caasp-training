@@ -39,7 +39,7 @@ EXTRA=FEATURES
 SYSTEM_ROLE=plain
 ```
 
-## CaaSP test - cluster deployment
+## CaaSP test - cluster deployment (change Name as you wish - so you can recognize it later)
 ```yaml
 Name: CaaSP-controller
 Settings:
