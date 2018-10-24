@@ -1,5 +1,7 @@
 # Define settings in openQA
 
+**Replace <N> with your number (1 .. 7)**
+
 ### Menu > Medium Types  (change Distri)
 This section defines ISO image. Flavor can distinguish net/live/normal types.
 ```yaml
