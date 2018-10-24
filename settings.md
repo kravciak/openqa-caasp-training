@@ -29,15 +29,17 @@ WORKER_CLASS=caasp_x86_64
 ### Menu > Test suites
 Test suite is set of variables given to the job when started. Variables are then parsed and processed by tests.
 
+## MicroOS test (simple optional example)
 EXTRA - run microOS feature tests like transactional-update after installation. SYSTEM_ROLE - will be selected by installer.
 ```yaml
-# MicroOS test (optional example)
+# MicroOS test
 Name: MicroOS-plain
 Settings:
 EXTRA=FEATURES
 SYSTEM_ROLE=plain
 ```
 
+## CaaSP test - cluster deployment
 ```yaml
 Name: CaaSP-controller
 Settings:
@@ -85,6 +87,8 @@ PARALLEL_WITH=CaaSP-controller
 STACK_ROLE=worker
 SYSTEM_ROLE=worker
 ```
+
+## Additional 
 
 **Optional Add & Remove nodes**
 
