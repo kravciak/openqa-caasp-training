@@ -1,6 +1,7 @@
 # Define settings in openQA
 
 ### Menu > Medium Types  (change Distri)
+This section defines ISO image. Flavor can distinguish net/live/normal types.
 ```yaml
 Distri:  caasp<X>
 Version: 3.0
@@ -12,6 +13,7 @@ DESKTOP=textmode
 ```
 
 ### Menu > Machines
+Definition of machine that should run our test. This matches real machine with openqa-worker installed that has set of capabilities (run on specific VM host, can run multimachine jobs, is x86_64)  
 ```yaml
 Name:    caasp_x86_64
 Backend: qemu
@@ -23,6 +25,7 @@ WORKER_CLASS=caasp_x86_64
 ```
 
 ### Menu > Test suites
+Test suite is set of variables given to the job when started. Variables are then parsed
 ```yaml
 # MicroOS test (optional example)
 Name: MicroOS-plain
