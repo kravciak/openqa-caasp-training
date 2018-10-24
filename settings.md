@@ -88,9 +88,9 @@ STACK_ROLE=worker
 SYSTEM_ROLE=worker
 ```
 
-## Additional 
+## Additional tests to check worker / master node addition / removal
 
-**Optional Add & Remove nodes**
+**Optional Add & Remove worker**
 
 ```yaml
 Name: CaaSP-worker-addrm
@@ -103,6 +103,7 @@ STACK_ROLE=worker
 SYSTEM_ROLE=worker
 ```
 
+**Optional Add & Remove master**
 ```yaml
 Name: CaaSP-master-rm
 Settings:
@@ -133,16 +134,15 @@ SYSTEM_ROLE=worker
 
 
 ### Job Groups: Pair media & machine & test suites
-Now you need to associate which test should be run on which image. Associate one or more ```CaaSP-master-*``` , one ```CaaSP-admin-*```, one ```CaaSP-controller-*```  and at least 2 ```CaaSP-worker-*``` testsuites.
+Now you need to associate which test should be run on which image
 
 # Run openQA jobs
 
 ### Download GM image and support server
-First download image that you want to test. You can download from:
+Download image that you want to test. We already downloaded GM image & support-server. You can download from:
  - https://openqa.suse.de/group_overview/136
  - http://download.suse.de/install/SUSE-CaaSP-3-GM/
 ```bash
-# We downloaded GM image & support-server
 # cd /var/lib/openqa/share/factory/iso/
 # wget http://openqa.suse.de/tests/1785307/asset/iso/SUSE-CaaS-Platform-3.0-DVD-x86_64-Build0101-Media1.iso
 
@@ -170,17 +170,21 @@ sudo -u geekotest -i ./rsync.pl --host localhost --verbose --add-existing caasp_
     ├── caasp/*
 ├── tests
     ├── caasp/*
-    ├── caasp/stack*
+    ├── caasp/stack_*
 ```
 
 # Tips
 ```bash
 # connect to running job
 PORT=5990+worker_id
-vncviewer uv300x.arch.suse.de:6019 -shared
+vncviewer uv300x.arch.suse.de:$PORT -shared
 
 # keep cluster alive in case of failure
 DEBUG_SLEEP=controller
+
+# Description of basic commands
+https://github.com/os-autoinst/os-autoinst/blob/master/testapi.pm
+ - assert_script_run "pin
 ```
 
 # What we have
