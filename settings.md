@@ -134,7 +134,7 @@ SYSTEM_ROLE=worker
 
 
 ### Job Groups: Pair media & machine & test suites
-Now you need to associate which test should be run on which image
+Now you need to associate which test should be run on which image. Associate one or more ```CaaSP-master-*``` , one ```CaaSP-admin-*```, one ```CaaSP-controller-*```  and at least 2 ```CaaSP-worker-*``` testsuites.
 
 # Run openQA jobs
 
